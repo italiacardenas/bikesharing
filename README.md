@@ -10,6 +10,20 @@ Tableau, Jupyter Notebook, and Pandas were used to create this analysis.
 1. NYC Citibikes are mostly being used between 8am-9am and 5pm-7pm.
 ![AugustNYCuse.png](https://github.com/italiacardenas/bikesharing/blob/96251f32b64b3c1bc27f6e83b89e069ed386a22d/AugustNYCuse.png)
 
+2. ![usertripduration.png](https://github.com/italiacardenas/bikesharing/blob/28a2d9c5a9ced1486ad76ad2955f80180431112f/usertripduration.png)
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+
+
 ## Election Audit Summary
  In order to reproduce this script for any election with some modications the folllowing would be required:
  - VS Code
