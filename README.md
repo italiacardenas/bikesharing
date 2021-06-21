@@ -10,30 +10,32 @@ Tableau, Jupyter Notebook, and Pandas were used to create this analysis.
 1. NYC Citibikes are mostly being used between 8am-9am and 5pm-7pm.
 ![AugustNYCuse.png](https://github.com/italiacardenas/bikesharing/blob/96251f32b64b3c1bc27f6e83b89e069ed386a22d/AugustNYCuse.png)
 
-2. ![usertripduration.png](https://github.com/italiacardenas/bikesharing/blob/28a2d9c5a9ced1486ad76ad2955f80180431112f/usertripduration.png)
+2. Because most of the data was within 60 minutes, hours 1 and 2 were deselected. This graph shows that the majority of the trips lasted roughly 5 minutes.
+![usertripduration.png](https://github.com/italiacardenas/bikesharing/blob/28a2d9c5a9ced1486ad76ad2955f80180431112f/usertripduration.png)
 
-3.
+3. The results of the Trips by Weekday per Hour graph are consistent with the month of August's peak hours.
+![tripsbyweekdayperhour.png](https://github.com/italiacardenas/bikesharing/blob/2c5be630218c07f71d64cedf583ce80e34ecbbf0/tripsbyweekdayperhour.png)
 
-4.
+4. The pie chart was used to determine who the majority of the users were. The results show that male users dominate the NYC CitiBie usage.
+![usersbygender.png](https://github.com/italiacardenas/bikesharing/blob/2c5be630218c07f71d64cedf583ce80e34ecbbf0/usersbygender.png)
 
-5.
+5. The following line chart shows that the trip duration varies depending on the gender of the user.
+![durationbygender.png](https://github.com/italiacardenas/bikesharing/blob/2c5be630218c07f71d64cedf583ce80e34ecbbf0/durationbygender.png)
 
-6.
+6. This heatgraph also reiterates the information displayed in the August Bar Graph which implies that most of the trips occur between 8am-9am and 5pm-7pm. It also provides more insight, by identifying Monday- Friday as the days most trips occur.
+![tripsbyweekdayperhour.png](https://github.com/italiacardenas/bikesharing/blob/2c5be630218c07f71d64cedf583ce80e34ecbbf0/tripsbyweekdayperhour.png)
 
-7.
+7. While, this grapoh is also consitent in terms of the time most trips occur, it clearly shows that the main consumer of NYC CitiBikies is the gender: Male.
+![tripsbyweekdayandgender.png](https://github.com/italiacardenas/bikesharing/blob/2c5be630218c07f71d64cedf583ce80e34ecbbf0/tripsbyweekdayandgender.png)
 
 
 
-## Election Audit Summary
- In order to reproduce this script for any election with some modications the folllowing would be required:
- - VS Code
- - CSV file with elections result tabular data
- - Python 3.7.6
- 
- 1. The first steps require importing the csv and creating variables that will be used in *for loops* and *if statements* and setting them to zero such as, total votes, winning candidate's count, winning candidate's percentage, largest county turnout, and largest county percentage as well as empty string variables for winning candidate and largest turnout county.
- 2. After setting the variables, two empty list must be created one for the different candidates and another for the different counties. Afterwords two empty dictionaries will be created, one to store the candidate votes count and another to store the vote counts by county.
- 3. The location of the files that is loaded to use for the audit and the location of the text file that will be used to print the results will differ and therefore need to be modifed. In this example the *election_results.csv* file is in the **Resources** folder and the *election_analysis.txt* file is in the **analysis**, but for a different audit, it is important to modfy the code to the correct location. 
-![file_locations.png](https://github.com/italiacardenas/Election_Analysis/blob/3f9895f6141a543a46a6a82b662f459dc3c0da89/Resources/file_locations.png)
-4. The code must be modified to reflect the data in the csv file being used for the audit. In this case, candidate_name = row[2] and county_name = row[1] tells Python that the candidate names are in row 2 of the csv file and county names are in row 1. The data may be different in a different audit and the code must be modified.
-![rows_referred_from_csv.png](https://github.com/italiacardenas/Election_Analysis/blob/3f9895f6141a543a46a6a82b662f459dc3c0da89/Resources/rows_referred_from_csv.png)   
- 
+## CitiBike SUmmary
+The story of NYC CitiBikes graphs created on Tableau implies that the main user of the biksharing system is male. The times most trip occur are 8am-9am and 5pm-7pm. It is important to note that these timme spans are consistent with "9 to 5" job schedules. Since, most of the users are male and subscribers, it is possible that the main consumer of the bikesharing system is also a local male working a 9 to 5. The opportunity to use the bike-sharing system as opposed to a car or public transportation could be due to the traffic that occurs on the users' routes to work. 
+
+1. The first step to embark in a further analysis in this direction would be to locate the areas where most trips begin.
+The following map shows starting locations that have a count of 10,000 or higher with a max of over 16,000 trips. This map helps identify the locations with the most start counts and could be valluable information for further analysis. Identifying these locations can help us understand why people are beginning their trips from here.
+![Starting_locations.png](https://github.com/italiacardenas/bikesharing/blob/828d1133d2c4840cc2b9e13796a5f7e28ca859cf/Starting_locations.png)
+
+2. Knowing where the trips are mostly ending can also be valouable information for a bike-sharing analysis. This information will allow us to find a connectikon between the starting and ending locations. Are users using the bikes to go from a residential area to the downtown area? If so this might confirm the earlier theory that the main users of the app are local males.
+![ending_locations.png](https://github.com/italiacardenas/bikesharing/blob/828d1133d2c4840cc2b9e13796a5f7e28ca859cf/ending_locations.png)
